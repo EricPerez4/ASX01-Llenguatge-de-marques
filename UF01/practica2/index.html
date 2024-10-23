@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pràctica 2</title>
+    <link rel="stylesheet" href="estils/styles.css">
+    <link rel="stylesheet" href="estils/form.css">
+</head>
+<body>
+
+    <!-- Barra de navegació -->
+    <header>
+
+        <div class="header-logo">
+            <img src="img/adidas-logo.jpeg" alt="Adidas Logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="presentacio.html">Presentació</a>
+            <a href="practiques.html">Pràctiques</a>
+            <a href="cv.html">CV</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+        
+        <div class="header-rrss">
+            <a href="https://www.linkedin.com/" target="_blank">
+                LinkedIn
+                <img src="img/linkedin-logo.png" alt="LinkedIn Logo">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                Instagram
+                <img src="img/insta.png" alt="Instagram Logo">
+            </a>
+            
+            <a href="https://www.facebook.com/" target="_blank">
+                Facebook
+                <img src="img/facebook-logo.png" alt="Facebook Logo">
+            </a>
+        </div>
+    </header>
+    
+    <div class="linia"></div>
+
+    <div class="cos">
+
+        <div class="formulari">
+            <section> 
+            <h1>Formulari</h1>
+        <!-- Formulari -->
+                <form action="./index.html">
+
+        <!-- Camp de nom -->
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom">
+        
+        <!-- Camp de correu -->
+                    <label for="correu">Correu</label>
+                    <input type="email" id="correu">
+
+        <!-- Camp per escolli el motiu -->
+                    <label for="motiu">Motiu</label>
+                    <select name="motiu" id="motiu">
+                        <option value="consulta">Consulta</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="ajuda">Ajuda</option>
+                        <option value="altres">Altres...</option>
+                    </select>
+            
+        <!-- Camp per missatge -->
+                    <label for="missatge">Missatge</label>
+                    <textarea name="missatge" id="missatge" rows="4" cols="50"></textarea>
+
+        <!-- Botó d'enviar -->
+                    <button type="submit"><b>Envia el formulari</b></button>
+                </form> 
+            </section>
+            
+        <!-- Articles relacionats -->
+        </div>
+
+        <aside>
+            <h3>Articles relacionats</h3>
+            <ul>
+                <li><a href="receptes/truita.html">Com fer una truita de patates</a></li>
+                <li><a href="receptes/macarrons.html">Com fer uns macarrons amb tomaquet</a></li>
+                <li><a href="receptes/passtis.html">Com fer un passtís de xocolata</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
