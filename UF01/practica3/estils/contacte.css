@@ -1,0 +1,130 @@
+h1 {
+    margin-left: 2%;
+    text-align: center;
+    padding: 1%;
+}
+
+h2 {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.xarxes-socials ul {
+    margin-left: -92%;
+}
+
+.xarxes-socials li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: black;
+}
+
+.xarxes-socials li span {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.xarxes-socials img {
+    width: 170px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.correu h2{
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.correu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: black;
+    margin-left: -87%;
+}
+
+.correu img {
+    width: 170px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+.correu span {
+    margin-left: 4.5%;
+}
+
+.correu a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: 2%;
+    text-decoration: none; 
+    color: black;
+    text-align: center;
+}
+
+.correu img{
+    width: 170px;
+    border-radius: 10%;
+    cursor: pointer;
+}
