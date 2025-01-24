@@ -1,0 +1,176 @@
+$with-desktop: 1440px;
+
+header {
+  background-image: url("../img/bg-hero-desktop.svg");
+  display: grid;
+  grid-template-areas:
+    "logo try"
+    "text image"; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 32px; 
+  align-items: center; 
+  padding: 32px;
+  font-family: "Poppins", 'sans-serif';
+  width: $with-desktop;
+  margin: 0 auto;
+
+  // Logo
+  a:first-of-type {
+    grid-area: logo;
+    img {
+      max-width: 180px;
+    }
+  }
+
+  // Botó "Try It Free"
+  div:nth-of-type(1) {
+    grid-area: try;
+    justify-self: end;
+
+    a {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      padding: 16px 33px;
+      border-radius: 50px;
+      
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+
+  // Text principal
+  div:nth-of-type(2) {
+    grid-area: text;
+    text-align: left;
+    max-width: 600px;
+
+    h1 {
+      font-size: 2.5px;
+      margin-bottom: 15px;
+      color: #333;
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 24px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+
+    //Botó rosa
+    a {
+      display: inline-block;
+      background-color: #ff0080;
+      color: #fff;
+      text-decoration: none;
+      padding: 21px 80px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #e60073;
+      }
+    }
+  }
+
+  // Imatge principal
+  img:last-of-type {
+    grid-area: image;
+    max-width: 100%;
+    align-self: center; 
+    justify-self: center; 
+    width: 400px;
+
+    @media (min-width: 768px) {
+      width: 700px; 
+    }
+  }
+}
+
+main {
+  display: grid;
+  padding: 32px;
+  font-family: "Poppins", 'sans-serif';
+  width: $with-desktop;
+  margin: 0 auto;
+  gap: 32px;
+  margin-left: 13%;
+  margin-right: 20%;
+  grid-template-areas:
+    "intro"
+    "photo"
+    "texto-flip" 
+    "photo-flip";
+
+  img {
+      width: 60%;
+  }
+
+  .box{
+    box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.35);
+    height: 90%;
+    width: 95%;
+    border-radius: 8px;
+  }
+
+  .box-flip{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35);
+    width: 95%;
+    border-radius: 8px;
+  }
+
+  .intro {
+    grid-area: intro; 
+    width: 40%; 
+    position: relative;
+    top: 150px;
+    right: -5%;
+  }
+
+  .intro p {
+    color: gray;
+  }
+
+  .photo {
+    grid-area: photo;
+    width: 60%; 
+    margin-left: 55%;
+    position: relative;
+    top: -110px;
+  }
+
+  .photo-flip {
+    grid-area: texto-flip;
+    width: 50%;
+    position: relative;
+    top: 90px;
+    margin-left: 7%;
+  }
+
+  .intro-flip{
+    grid-area: intro; 
+    width: 40%;
+    margin-left: 50%; 
+    position: relative;
+    top: -190px;
+  }
+
+  .intro-flip p {
+    color: gray;
+  }
+}
