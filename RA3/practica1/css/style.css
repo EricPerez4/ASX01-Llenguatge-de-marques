@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        ". titol ."
+        ". p ."
+        "canviarText afegirElement eliminarElement"
+        ". llista .";
+    margin: 0 auto;
+}
+
+h1 {
+    grid-area: titol;
+    text-align: center;
+}
+
+p{
+    grid-area: p;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#canviarText {
+    grid-area: canviarText;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 87%;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(158, 148, 245);
+    border-color: rgb(158, 148, 245);
+    font-weight: bold;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+#canviarText:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-1.5px);
+}
+
+
+#afegirElement {
+    grid-area: afegirElement;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    color: white;
+    font-weight: bold;
+    margin-left: 32%;
+    border-radius: 50px;
+    background-color: rgb(82, 204, 78);
+    border-color: rgb(82, 204, 78);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+#afegirElement:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-1.5px);
+}
+
+
+#eliminarElement {
+    grid-area: eliminarElement;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    color: white;
+    font-weight: bold;
+    margin-left: -37%;
+    background-color: rgb(240, 105, 105);
+    padding: 2%;
+    border-radius: 50px;
+    border-color: rgb(240, 105, 105);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+#eliminarElement:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-1.5px);
+}
+
+#llista {
+    grid-area: llista;
+    text-align: center;
+    justify-items: center;
+}
+
+li {
+    background-color: rgb(255, 201, 248);
+    padding: 1.5%;
+    border: 2px solid black;
+    margin-bottom: 1%;
+    width: 30%;
+    list-style: none;
+    margin-left: -4%;
+}
